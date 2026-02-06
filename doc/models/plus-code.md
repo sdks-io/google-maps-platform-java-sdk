@@ -1,0 +1,34 @@
+
+# Plus Code
+
+An encoded location reference, derived from latitude and longitude coordinates, that represents an area, 1/8000th of a degree by 1/8000th of a degree (about 14m x 14m at the equator) or smaller. Plus codes can be used as a replacement for street addresses in places where they do not exist (where buildings are not numbered or streets are not named).
+
+Site describing Plus Codes.: [https://plus.codes/](https://plus.codes/)
+
+*This model accepts additional fields of type Object.*
+
+## Structure
+
+`PlusCode`
+
+## Fields
+
+| Name | Type | Tags | Description | Getter | Setter |
+|  --- | --- | --- | --- | --- | --- |
+| `CompoundCode` | `String` | Optional | The `compound_code` is a 6 character or longer local code with an explicit location (`CWC8+R9, Mountain View, CA, USA`). Some APIs may return an empty string if the `compound_code` is not available. | String getCompoundCode() | setCompoundCode(String compoundCode) |
+| `GlobalCode` | `String` | Required | The `global_code` is a 4 character area code and 6 character or longer local code (`849VCWC8+R9`). | String getGlobalCode() | setGlobalCode(String globalCode) |
+| `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
+
+## Example (as JSON)
+
+```json
+{
+  "compound_code": "compound_code4",
+  "global_code": "global_code8",
+  "exampleAdditionalProperty": {
+    "key1": "val1",
+    "key2": "val2"
+  }
+}
+```
+
