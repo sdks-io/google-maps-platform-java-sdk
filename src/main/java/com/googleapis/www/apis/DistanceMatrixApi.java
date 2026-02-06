@@ -76,8 +76,7 @@ public final class DistanceMatrixApi extends BaseApi {
      *         be prefixed with `enc:` and followed by a colon `:`. For example:
      *         `origins=enc:gfo}EtohhU:` - You can also include multiple encoded polylines,
      *         separated by the pipe character `|`. For example: ```
-     *         origins=enc:wc~oAwquwMdlTxiKtqLyiK:|enc:c~vnAamswMvlTor{@literal
-     *         @}tjGi}L:|enc:udymA{~bxM: ```
+     *         origins=enc:wc~oAwquwMdlTxiKtqLyiK:|enc:c~vnAamswMvlTortjGi}L:|enc:udymA{~bxM: ```
      * @param  arrivalTime  Optional parameter: Specifies the desired time of arrival for transit
      *         directions, in seconds since midnight, January 1, 1970 UTC. You can specify either
      *         `departure_time` or `arrival_time`, but not both. Note that `arrival_time` must be
@@ -250,8 +249,7 @@ public final class DistanceMatrixApi extends BaseApi {
      *         be prefixed with `enc:` and followed by a colon `:`. For example:
      *         `origins=enc:gfo}EtohhU:` - You can also include multiple encoded polylines,
      *         separated by the pipe character `|`. For example: ```
-     *         origins=enc:wc~oAwquwMdlTxiKtqLyiK:|enc:c~vnAamswMvlTor{@literal
-     *         @}tjGi}L:|enc:udymA{~bxM: ```
+     *         origins=enc:wc~oAwquwMdlTxiKtqLyiK:|enc:c~vnAamswMvlTortjGi}L:|enc:udymA{~bxM: ```
      * @param  arrivalTime  Optional parameter: Specifies the desired time of arrival for transit
      *         directions, in seconds since midnight, January 1, 1970 UTC. You can specify either
      *         `departure_time` or `arrival_time`, but not both. Note that `arrival_time` must be

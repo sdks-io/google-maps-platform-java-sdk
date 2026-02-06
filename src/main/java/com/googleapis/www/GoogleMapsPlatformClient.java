@@ -55,7 +55,7 @@ public final class GoogleMapsPlatformClient implements Configuration {
 
     private static final CompatibilityFactory compatibilityFactory = new CompatibilityFactoryImpl();
 
-    private static String userAgent = "Java-SDK/1.0.1 (OS: {os-info}, Engine: {engine}/{engine-version})";
+    private static String userAgent = "Java-SDK/1.0.2 (OS: {os-info}, Engine: {engine}/{engine-version})";
 
     /**
      * Current API environment.

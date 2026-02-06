@@ -173,7 +173,7 @@ public final class DirectionsApi extends BaseApi {
      *         Encoded polylines must be prefixed with `enc:` and followed by a colon (`:`). For
      *         example: `waypoints=enc:gfo}EtohhU:`. * You can also include multiple encoded
      *         polylines, separated by the pipe character (`|`). For example,
-     *         `waypoints=via:enc:wc~oAwquwMdlTxiKtqLyiK:|enc:c~vnAamswMvlTor{@literal @}tjGi}L:|
+     *         `waypoints=via:enc:wc~oAwquwMdlTxiKtqLyiK:|enc:c~vnAamswMvlTortjGi}L:|
      *         via:enc:udymA{~bxM:` ##### Influence routes with stopover and pass through points For
      *         each waypoint in the request, the directions response appends an entry to the `legs`
      *         array to provide the details for stopovers on that leg of the journey. If you'd like
@@ -446,7 +446,7 @@ public final class DirectionsApi extends BaseApi {
      *         Encoded polylines must be prefixed with `enc:` and followed by a colon (`:`). For
      *         example: `waypoints=enc:gfo}EtohhU:`. * You can also include multiple encoded
      *         polylines, separated by the pipe character (`|`). For example,
-     *         `waypoints=via:enc:wc~oAwquwMdlTxiKtqLyiK:|enc:c~vnAamswMvlTor{@literal @}tjGi}L:|
+     *         `waypoints=via:enc:wc~oAwquwMdlTxiKtqLyiK:|enc:c~vnAamswMvlTortjGi}L:|
      *         via:enc:udymA{~bxM:` ##### Influence routes with stopover and pass through points For
      *         each waypoint in the request, the directions response appends an entry to the `legs`
      *         array to provide the details for stopovers on that leg of the journey. If you'd like
