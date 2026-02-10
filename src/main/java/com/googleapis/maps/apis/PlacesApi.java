@@ -359,11 +359,11 @@ public final class PlacesApi extends BaseApi {
      *         default. - IP bias: Instructs the API to use IP address biasing. Pass the string
      *         `ipbias` (this option has no additional parameters). - Circular: A string specifying
      *         radius in meters, plus lat/lng in decimal degrees. Use the following format:
-     *         `circle:radius{@literal @}lat,lng`. - Rectangular: A string specifying two lat/lng
-     *         pairs in decimal degrees, representing the south/west and north/east points of a
-     *         rectangle. Use the following format:`rectangle:south,west|north,east`. Note that
-     *         east/west values are wrapped to the range -180, 180, and north/south values are
-     *         clamped to the range -90, 90.
+     *         `circle:radiuslat,lng`. - Rectangular: A string specifying two lat/lng pairs in
+     *         decimal degrees, representing the south/west and north/east points of a rectangle.
+     *         Use the following format:`rectangle:south,west|north,east`. Note that east/west
+     *         values are wrapped to the range -180, 180, and north/south values are clamped to the
+     *         range -90, 90.
      * @param  language  Optional parameter: The language in which to return results. * See the
      *         [list of supported
      *         languages](https://developers.google.com/maps/faq#languagesupport). Google often
@@ -448,11 +448,11 @@ public final class PlacesApi extends BaseApi {
      *         default. - IP bias: Instructs the API to use IP address biasing. Pass the string
      *         `ipbias` (this option has no additional parameters). - Circular: A string specifying
      *         radius in meters, plus lat/lng in decimal degrees. Use the following format:
-     *         `circle:radius{@literal @}lat,lng`. - Rectangular: A string specifying two lat/lng
-     *         pairs in decimal degrees, representing the south/west and north/east points of a
-     *         rectangle. Use the following format:`rectangle:south,west|north,east`. Note that
-     *         east/west values are wrapped to the range -180, 180, and north/south values are
-     *         clamped to the range -90, 90.
+     *         `circle:radiuslat,lng`. - Rectangular: A string specifying two lat/lng pairs in
+     *         decimal degrees, representing the south/west and north/east points of a rectangle.
+     *         Use the following format:`rectangle:south,west|north,east`. Note that east/west
+     *         values are wrapped to the range -180, 180, and north/south values are clamped to the
+     *         range -90, 90.
      * @param  language  Optional parameter: The language in which to return results. * See the
      *         [list of supported
      *         languages](https://developers.google.com/maps/faq#languagesupport). Google often
@@ -1391,17 +1391,17 @@ public final class PlacesApi extends BaseApi {
      *         default. - IP bias: Instructs the API to use IP address biasing. Pass the string
      *         `ipbias` (this option has no additional parameters). - Circular: A string specifying
      *         radius in meters, plus lat/lng in decimal degrees. Use the following format:
-     *         `circle:radius{@literal @}lat,lng`. - Rectangular: A string specifying two lat/lng
-     *         pairs in decimal degrees, representing the south/west and north/east points of a
-     *         rectangle. Use the following format:`rectangle:south,west|north,east`. Note that
-     *         east/west values are wrapped to the range -180, 180, and north/south values are
-     *         clamped to the range -90, 90.
+     *         `circle:radiuslat,lng`. - Rectangular: A string specifying two lat/lng pairs in
+     *         decimal degrees, representing the south/west and north/east points of a rectangle.
+     *         Use the following format:`rectangle:south,west|north,east`. Note that east/west
+     *         values are wrapped to the range -180, 180, and north/south values are clamped to the
+     *         range -90, 90.
      * @param  locationrestriction  Optional parameter: Restrict results to a specified area, by
      *         specifying either a radius plus lat/lng, or two lat/lng pairs representing the points
      *         of a rectangle. - Circular: A string specifying radius in meters, plus lat/lng in
-     *         decimal degrees. Use the following format: `circle:radius{@literal @}lat,lng`. -
-     *         Rectangular: A string specifying two lat/lng pairs in decimal degrees, representing
-     *         the south/west and north/east points of a rectangle. Use the following
+     *         decimal degrees. Use the following format: `circle:radiuslat,lng`. - Rectangular: A
+     *         string specifying two lat/lng pairs in decimal degrees, representing the south/west
+     *         and north/east points of a rectangle. Use the following
      *         format:`rectangle:south,west|north,east`. Note that east/west values are wrapped to
      *         the range -180, 180, and north/south values are clamped to the range -90, 90.
      * @param  types  Optional parameter: You can restrict results from a Place Autocomplete request
@@ -1557,17 +1557,17 @@ public final class PlacesApi extends BaseApi {
      *         default. - IP bias: Instructs the API to use IP address biasing. Pass the string
      *         `ipbias` (this option has no additional parameters). - Circular: A string specifying
      *         radius in meters, plus lat/lng in decimal degrees. Use the following format:
-     *         `circle:radius{@literal @}lat,lng`. - Rectangular: A string specifying two lat/lng
-     *         pairs in decimal degrees, representing the south/west and north/east points of a
-     *         rectangle. Use the following format:`rectangle:south,west|north,east`. Note that
-     *         east/west values are wrapped to the range -180, 180, and north/south values are
-     *         clamped to the range -90, 90.
+     *         `circle:radiuslat,lng`. - Rectangular: A string specifying two lat/lng pairs in
+     *         decimal degrees, representing the south/west and north/east points of a rectangle.
+     *         Use the following format:`rectangle:south,west|north,east`. Note that east/west
+     *         values are wrapped to the range -180, 180, and north/south values are clamped to the
+     *         range -90, 90.
      * @param  locationrestriction  Optional parameter: Restrict results to a specified area, by
      *         specifying either a radius plus lat/lng, or two lat/lng pairs representing the points
      *         of a rectangle. - Circular: A string specifying radius in meters, plus lat/lng in
-     *         decimal degrees. Use the following format: `circle:radius{@literal @}lat,lng`. -
-     *         Rectangular: A string specifying two lat/lng pairs in decimal degrees, representing
-     *         the south/west and north/east points of a rectangle. Use the following
+     *         decimal degrees. Use the following format: `circle:radiuslat,lng`. - Rectangular: A
+     *         string specifying two lat/lng pairs in decimal degrees, representing the south/west
+     *         and north/east points of a rectangle. Use the following
      *         format:`rectangle:south,west|north,east`. Note that east/west values are wrapped to
      *         the range -180, 180, and north/south values are clamped to the range -90, 90.
      * @param  types  Optional parameter: You can restrict results from a Place Autocomplete request
