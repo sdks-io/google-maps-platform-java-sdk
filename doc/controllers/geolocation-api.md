@@ -28,6 +28,10 @@ CompletableFuture<ApiResponse<GeolocationResponse>> geolocateAsync(
 |  --- | --- | --- | --- |
 | `body` | [`GeolocationRequest`](../../doc/models/geolocation-request.md) | Body, Optional | The request body must be formatted as JSON. |
 
+## Server
+
+`Server.GOOGLE_APIS`
+
 ## Response Type
 
 This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The `getResult()` getter of this instance returns the response data which is of type [`GeolocationResponse`](../../doc/models/geolocation-response.md).

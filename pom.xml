@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.sdks</groupId>
   <artifactId>google-maps-platform-sdk</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <packaging>jar</packaging>
   <name>Google Maps Platform SDK</name>
   <description>Get location data for over 200 million places, and add place details, search, and autocomplete to your apps.</description>
@@ -138,7 +138,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <Automatic-Module-Name>com.googleapis.www</Automatic-Module-Name>
+              <Automatic-Module-Name>com.googleapis.maps</Automatic-Module-Name>
             </manifestEntries>
           </archive>
         </configuration>

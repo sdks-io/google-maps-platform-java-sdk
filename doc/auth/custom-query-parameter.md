@@ -22,8 +22,8 @@ Documentation for accessing and setting credentials for ApiKeyAuth.
 You must provide credentials in the client as shown in the following code snippet.
 
 ```java
-import com.googleapis.www.GoogleMapsPlatformClient;
-import com.googleapis.www.authentication.CustomQueryAuthenticationModel;
+import com.googleapis.maps.GoogleMapsPlatformClient;
+import com.googleapis.maps.authentication.CustomQueryAuthenticationModel;
 
 public class Program {
     public static void main(String[] args) {

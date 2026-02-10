@@ -24,8 +24,8 @@ To configure the SDK to use a proxy server, initialize the proxy configuration d
 ## Usage Example
 
 ```java
-import com.googleapis.www.GoogleMapsPlatformClient;
-import com.googleapis.www.http.client.HttpProxyConfiguration;
+import com.googleapis.maps.GoogleMapsPlatformClient;
+import com.googleapis.maps.http.client.HttpProxyConfiguration;
 
 GoogleMapsPlatformClient client = new GoogleMapsPlatformClient.Builder()
   .httpClientConfig(configBuilder -> configBuilder

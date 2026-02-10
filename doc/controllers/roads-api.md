@@ -31,6 +31,10 @@ CompletableFuture<ApiResponse<SnapToRoadsResponse>> snapToRoadsAsync(
 | `path` | `List<String>` | Query, Required | The path to be snapped. The path parameter accepts a list of latitude/longitude pairs. Latitude and longitude values should be separated by commas. Coordinates should be separated by the pipe character: "\|". For example: `path=60.170880,24.942795\|60.170879,24.942796\|60.170877,24.942796`.<br><br><div class="note">Note: The snapping algorithm works best for points that are not too far apart. If you observe odd snapping behavior, try creating paths that have points closer together. To ensure the best snap-to-road quality, you should aim to provide paths on which consecutive pairs of points are within 300m of each other. This will also help in handling any isolated, long jumps between consecutive points caused by GPS signal loss, or noise.</div><br> |
 | `interpolate` | `Boolean` | Query, Optional | Whether to interpolate a path to include all points forming the full road-geometry. When true, additional interpolated points will also be returned, resulting in a path that smoothly follows the geometry of the road, even around corners and through tunnels. Interpolated paths will most likely contain more points than the original path. Defaults to `false`. |
 
+## Server
+
+`Server.ROADS_APIS`
+
 ## Response Type
 
 This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The `getResult()` getter of this instance returns the response data which is of type [`SnapToRoadsResponse`](../../doc/models/snap-to-roads-response.md).
@@ -144,6 +148,10 @@ CompletableFuture<ApiResponse<NearestRoadsResponse>> nearestRoadsAsync(
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `points` | `List<String>` | Query, Required | The points to be snapped. The points parameter accepts a list of latitude/longitude pairs. Separate latitude and longitude values with commas. Separate coordinates with the pipe character: "\|". For example: `points=60.170880,24.942795\|60.170879,24.942796\|60.170877,24.942796`. |
+
+## Server
+
+`Server.ROADS_APIS`
 
 ## Response Type
 

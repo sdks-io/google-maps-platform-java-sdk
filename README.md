@@ -13,34 +13,34 @@ Install the SDK by adding the following dependency in your project's pom.xml fil
 <dependency>
   <groupId>io.sdks</groupId>
   <artifactId>google-maps-platform-sdk</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
 </dependency>
 ```
 
 You can also view the package at:
-https://central.sonatype.com/artifact/io.sdks/google-maps-platform-sdk/1.0.2
+https://central.sonatype.com/artifact/io.sdks/google-maps-platform-sdk/1.0.3
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
 | Parameter | Type | Description |
 |  --- | --- | --- |
-| environment | [`Environment`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/README.md#environments) | The API environment. <br> **Default: `Environment.PRODUCTION`** |
-| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
-| loggingConfig | [`Consumer<ApiLoggingConfiguration.Builder>`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/api-logging-configuration-builder.md) | Set up Logging Configuration instance. |
-| customQueryAuthenticationCredentials | [`CustomQueryAuthenticationCredentials`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/auth/custom-query-parameter.md) | The Credentials Setter for Custom Query Parameter |
+| environment | [`Environment`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/README.md#environments) | The API environment. <br> **Default: `Environment.PRODUCTION`** |
+| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
+| loggingConfig | [`Consumer<ApiLoggingConfiguration.Builder>`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/api-logging-configuration-builder.md) | Set up Logging Configuration instance. |
+| customQueryAuthenticationCredentials | [`CustomQueryAuthenticationCredentials`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/auth/custom-query-parameter.md) | The Credentials Setter for Custom Query Parameter |
 
 The API client can be initialized as follows:
 
 ```java
-import com.googleapis.www.Environment;
-import com.googleapis.www.GoogleMapsPlatformClient;
-import com.googleapis.www.authentication.CustomQueryAuthenticationModel;
-import com.googleapis.www.exceptions.ApiException;
-import com.googleapis.www.http.response.ApiResponse;
+import com.googleapis.maps.Environment;
+import com.googleapis.maps.GoogleMapsPlatformClient;
+import com.googleapis.maps.authentication.CustomQueryAuthenticationModel;
+import com.googleapis.maps.exceptions.ApiException;
+import com.googleapis.maps.http.response.ApiResponse;
 import org.slf4j.event.Level;
 
 public class Program {
@@ -72,55 +72,53 @@ The SDK can be configured to use a different environment for making API calls. A
 | Name | Description |
 |  --- | --- |
 | PRODUCTION | **Default** |
-| ENVIRONMENT2 | - |
-| ENVIRONMENT3 | - |
 
 ## Authorization
 
 This API uses the following authentication schemes.
 
-* [`ApiKeyAuth (Custom Query Parameter)`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/auth/custom-query-parameter.md)
+* [`ApiKeyAuth (Custom Query Parameter)`](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/auth/custom-query-parameter.md)
 
 ## List of APIs
 
-* [Geolocation API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/controllers/geolocation-api.md)
-* [Directions API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/controllers/directions-api.md)
-* [Elevation API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/controllers/elevation-api.md)
-* [Geocoding API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/controllers/geocoding-api.md)
-* [Time Zone API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/controllers/time-zone-api.md)
-* [Roads API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/controllers/roads-api.md)
-* [Distance Matrix API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/controllers/distance-matrix-api.md)
-* [Places API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/controllers/places-api.md)
-* [Street View API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/controllers/street-view-api.md)
+* [Geolocation API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/controllers/geolocation-api.md)
+* [Directions API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/controllers/directions-api.md)
+* [Elevation API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/controllers/elevation-api.md)
+* [Geocoding API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/controllers/geocoding-api.md)
+* [Time Zone API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/controllers/time-zone-api.md)
+* [Roads API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/controllers/roads-api.md)
+* [Distance Matrix API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/controllers/distance-matrix-api.md)
+* [Places API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/controllers/places-api.md)
+* [Street View API](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/controllers/street-view-api.md)
 
 ## SDK Infrastructure
 
 ### Configuration
 
-* [ApiLoggingConfiguration](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/api-logging-configuration.md)
-* [ApiLoggingConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/api-logging-configuration-builder.md)
-* [ApiRequestLoggingConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/api-request-logging-configuration-builder.md)
-* [ApiResponseLoggingConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/api-response-logging-configuration-builder.md)
-* [Configuration Interface](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/configuration-interface.md)
-* [HttpClientConfiguration](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-client-configuration.md)
-* [HttpClientConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-client-configuration-builder.md)
-* [HttpProxyConfiguration](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-proxy-configuration.md)
-* [HttpProxyConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-proxy-configuration-builder.md)
+* [ApiLoggingConfiguration](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/api-logging-configuration.md)
+* [ApiLoggingConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/api-logging-configuration-builder.md)
+* [ApiRequestLoggingConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/api-request-logging-configuration-builder.md)
+* [ApiResponseLoggingConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/api-response-logging-configuration-builder.md)
+* [Configuration Interface](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/configuration-interface.md)
+* [HttpClientConfiguration](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-client-configuration.md)
+* [HttpClientConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-client-configuration-builder.md)
+* [HttpProxyConfiguration](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-proxy-configuration.md)
+* [HttpProxyConfiguration.Builder](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-proxy-configuration-builder.md)
 
 ### HTTP
 
-* [Headers](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/headers.md)
-* [HttpCallback Interface](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-callback-interface.md)
-* [HttpContext](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-context.md)
-* [HttpBodyRequest](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-body-request.md)
-* [HttpRequest](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-request.md)
-* [HttpResponse](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/http-string-response.md)
+* [Headers](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/headers.md)
+* [HttpCallback Interface](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-callback-interface.md)
+* [HttpContext](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-context.md)
+* [HttpBodyRequest](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-body-request.md)
+* [HttpRequest](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-request.md)
+* [HttpResponse](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/http-string-response.md)
 
 ### Utilities
 
-* [ApiException](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/api-exception.md)
-* [ApiResponse](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/api-response.md)
-* [ApiHelper](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/api-helper.md)
-* [FileWrapper](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.2/doc/file-wrapper.md)
+* [ApiException](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/api-exception.md)
+* [ApiResponse](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/api-response.md)
+* [ApiHelper](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/api-helper.md)
+* [FileWrapper](https://www.github.com/sdks-io/google-maps-platform-java-sdk/tree/1.0.3/doc/file-wrapper.md)
 

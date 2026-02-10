@@ -15,7 +15,7 @@ Represents the result of an API call, including response metadata and the return
 
 ```java
 import java.io.IOException;
-import com.googleapis.www.exceptions;
+import com.googleapis.maps.exceptions;
 
 exampleController.getExampleTypeAsync(body).thenAccept(result -> {
     // success callback handler

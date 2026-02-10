@@ -13,11 +13,11 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```java
-import com.googleapis.www.Environment;
-import com.googleapis.www.GoogleMapsPlatformClient;
-import com.googleapis.www.authentication.CustomQueryAuthenticationModel;
-import com.googleapis.www.exceptions.ApiException;
-import com.googleapis.www.http.response.ApiResponse;
+import com.googleapis.maps.Environment;
+import com.googleapis.maps.GoogleMapsPlatformClient;
+import com.googleapis.maps.authentication.CustomQueryAuthenticationModel;
+import com.googleapis.maps.exceptions.ApiException;
+import com.googleapis.maps.http.response.ApiResponse;
 import org.slf4j.event.Level;
 
 public class Program {
